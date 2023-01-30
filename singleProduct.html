@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website</title>
+
+   <!--Font Awesome Icon Cdn link-- link to download  --- https://fontawesome.com/v5/docs/web/use-with/wordpress/install-manually#setup-webfont-with-cdn -->
+
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <!--Navigation part-->
+ <section id="header">
+    <a href="#"><img src="watches/logo.png" class="logo" alt=""></a>
+    
+    <div>
+        <ul id="nav-bar">
+            <li><a class="" href="index.html">Home</a></li>
+            <li><a class="active" href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="singleProduct.html"><i class="fa fa-shopping-cart" id="cart" aria-hidden="true"></i></a></li>   
+            <li><a href="#"><i class="fa fa-times" id="close" aria-hidden="true"></i></a></li>   
+       
+        </ul>
+    </div>
+
+    <div id="mobile">
+        
+        <a href="singleProduct.html"><i class="fa fa-shopping-cart" id="mobile-cart" aria-hidden="true"></i></a>   
+       <span id="cart-count"></span>
+        <i id="bar" class="fa fa-bars" aria-hidden="true"></i>
+    </i> 
+    </div>
+ 
+</section>
+<!--End of Navigation-->
+
+
+
+
+<section id="prodDetails" class="section-p1">
+
+<div class="single-prod-image">
+        <img src="watches/watch1.jpg" width="100%" id ='large-image'>
+
+    <div class="small-images-group">
+        <div class="image-col">
+        <img src="watches/watch2.jpg" width="100%" class="small-images">
+       </div>
+
+        <div class="image-col">
+            <img src="watches/watch1.jpg" width="100%"  class="small-images">
+        </div>
+
+        <div class="image-col">
+            <img src="watches/watch3.jpg" width="100%" class="small-images">
+        </div>
+    </div>  <!--Multiple small iamges-->
+</div>  <!--Single large Image-->
+
+
+<div class="details-info">
+    <p>Watches / Collections</p>
+    <h4>Men's Fashion watch</h4>
+    <h3>$150.00</h3> 
+
+    <select id="colors">
+        <option>Select colors</option>
+        <option id="black">Black</option>
+        <option id="gold">Gold</option>
+        <option id="silver">Silver</option>
+   </select>
+
+    <div class="add-to-cart">
+        <select id="selectedNumber">
+        <option>order Item</option>    
+        <option type="text" name="" id="add1">1</option>
+        <option type="text" name="" id="add2">2</option>
+        <option type="text" name="" id="add3">3</option>
+        <option type="text" name="" id="add4">4</option>
+        <option type="text" name="" id="add5">5</option>
+        </select>
+        <button type="submit" id="cart-btn" onclick="addToCart()">Add to Cart</button>
+
+
+       <div class="total">
+
+           <div class="item-descriptions">
+             <p><strong>Date:</strong></p>
+             <p id="date"></p>
+            </div>
+
+         <div class="color-descriptions">
+             <p><strong>Color</strong></p>
+             <p id="colorId"></p>
+
+         </div>
+        
+           <div class="amount-descriptions">
+                   <h4 class="headerAmount">Total Amount:$</h4>
+                   <h4 id="total-amount"></h4>
+          </div>   
+      </div>
+        
+
+    </div>
+        <div class="description">
+         <h4>Product Details</h4>
+         <p>Featuring some of the world's most exquisite diamonds and the most luxurious of stones, the women's Rolex Pearlmaster features some of the most feminine and coveted timepieces. Expertly crafted and femininely designed featuring its softly curved lines, the watch is exclusively available in 18ct white, yellow, or Everose gold. Where refinement meets technical excellence, the Rolex Pearlmaster is designed for comfort in concert with true elegance.</p>
+    </div>
+</div>
+</section>
+
+
+<section id="newsletter" class="section-p1">
+
+    <div class="newstext">
+      <h4>Sign up for news Letter</h4>
+      <p>Get an Email updates about our latest items and <span>Special offers</span></p>
+     </div>
+  
+     <div class="form">
+          <input type="text" name="" id="" placeholder="Your email address">
+          <button>Sign up</button>  
+         </div>
+  </div>
+</section>
+
+<!-- Footer-->
+<footer class="section-p1" >
+
+    <div class="col">
+        <img src="watches/logo.png">
+        <h4>Contact</h4>
+        <p>Address: Talamban Ceu city, 6000. phillipines</p>
+        <p>Phone: +63924686554</p>
+        <p>Hours: 10:00Am - 8:00Pm. Mon - Sat </p>
+        <h4>Follow Us</h4>
+        <a href="cart.html"><i class="fab fa-facebook" aria-hidden="true"></i></a>       
+        <a href="cart.html"><i class="fab fa-twitter" aria-hidden="true"></i></a>       
+        <a href="cart.html"><i class="fab fa-instagram" aria-hidden="true"></i></a>       
+        <a href="cart.html"><i class="fab fa-youtube" aria-hidden="true"></i></a>       
+    </div>
+
+
+    <div class="col">
+        <h4>About</h4>
+    <div class="about">
+        <a href="#">About Us</a>
+        <a href="#">delivery Information</a>
+        <a href="#">Privacy Policy</a>       
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contust Us</a>
+    </div>
+    </div>
+    
+
+    <div class="col">
+     <h4>My Account</h4>
+     <div class="account">
+     <a href="#">Sign In</a>
+     <a href="#">View Cart</a>
+     <a href="#">My Wishlist</a>       
+     <a href="#">Track My Order</a>
+     <a href="#">Help</a>
+    </div>
+    </div>
+
+    <div class="col">
+        <h4>Install App</h4>
+        <div class="install">
+            <img src="pay/app.png">
+          
+        </div>
+        <p>Secure Payment Gateways</p>
+        <img src="pay/pay.png" class="pay">
+        
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+</body>
+
+<script>
+  
+
+    // images Animation when click  //
+
+    const largeimage = document.getElementById('large-image');
+    const smallimages = document.getElementsByClassName('small-images');
+
+    smallimages[0].onclick = () =>{
+    largeimage.src = smallimages[0].src;
+    }
+
+
+    smallimages[1].onclick = () =>{
+    largeimage.src = smallimages[1].src;
+    }
+    
+    smallimages[2].onclick = () =>{
+    largeimage.src = smallimages[2].src;
+    }
+
+    
+
+ //cart button
+    const cartButton = document.getElementById('cart-btn')
+ // colors
+    const colors = document.querySelector('#colors')
+    const selectElement = document.querySelector('#selectedNumber')
+   
+
+     function addToCart() {
+       let price =150;
+       let finalAmount =0;
+      
+       // get the total amount //
+        let results = selectElement.value * price;
+       document.getElementById('total-amount').innerText =results;
+     
+       
+
+       // get the color value //
+
+       document.getElementById('colorId').innerText =colors.value;
+       document.getElementById('date').innerText = Date();
+      
+    
+     }
+
+  
+</script>
+</html>

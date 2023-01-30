@@ -1,0 +1,1236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;1,100;1,200;1,300;1,400&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* GLOBAL VARIABLES  */
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+
+h2{
+    font-size: 50px;
+    line-height: 54px;
+    color: #222;
+
+}
+
+h4{
+    font-size: 20px;
+    color: #222;
+
+}
+
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p{
+    font-size: 16px;
+    color:#465b52;
+    margin:15px 0 20px 0;
+}
+
+.section-p1{
+padding: 40px 80px;
+}
+
+.section-m1{
+    margin: 40px 0;
+}
+
+body{
+ width: 100%;
+}
+
+
+/* END GLOBAL VARIABLES  */
+
+
+
+/* header start */
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px 80px;
+    background: rgb(127, 195, 195);
+    box-shadow: 5px 5px 15px rgb(127, 195, 195);
+    position: sticky;
+    top:0;
+    left:0;
+    width: 100%;
+   
+    
+}
+#mobile{
+    display: none;
+}
+#close{
+    display: none;
+}
+
+img{
+    width:100px;
+    height: 80px;
+}
+
+#nav-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-bar li{
+    list-style: none;
+    padding:0 20px;
+    position: relative;
+}
+
+#nav-bar a{
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 800;
+    color:#1a1a1a;
+    transition: all ease-in 0.3s;
+}
+
+/* underline animation using Psedu and set the parent container to realtive position */
+
+#nav-bar li a:hover,
+#nav-bar li a:active{
+    color:#088178;
+}
+
+#nav-bar li a.active::after,
+#nav-bar li a:hover::after{
+    content:"";
+    width:30%;
+    height:2px;
+    background-color:#088178;
+    position: absolute;
+    bottom: -5px;
+    left: 20px;
+    transition: 0.3s;
+
+}
+/* End of Navigation design */
+
+
+
+/* main page */
+
+#hero{
+    background-image: url("watches/watch7.jpg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 20% right 10%;
+    padding:0  80px;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+}
+
+
+#hero h4{
+    padding-bottom:15px
+}
+
+
+#hero h1{
+   color: #088178;
+}
+
+#hero button{
+    background:#088178;
+    width: 260px;
+    height: 50px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    color:#d7ecea;
+    font-size: 17px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px rgb(127, 195, 195);
+    
+}
+#hero button:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+/* END OF HERO */
+
+/* START OF FEATURE BOXES */
+#feature-boxes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;  /* to avoid over flow the boxes */
+   
+}
+#feature-boxes .features-box{
+   text-align:center;
+   padding:20px 20px;
+   /* x,y, radius and color for the box shadow format */
+   box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.1);
+   border:2px solid #f5f8f5; 
+   margin: 0 10px;
+   cursor: pointer;
+   width: 200px;
+  
+ 
+}
+
+#feature-boxes .features-box:hover{
+    box-shadow: 10px 10px 54px rgba(70,62,0,221,0.5);
+    transition: all ease-out .3s;
+    transform: scale(0.8);
+  
+}
+
+.features-box h6{
+    color:#088178;
+    background-color: rgb(246, 187, 187);
+    padding:5px 0;
+    border-radius: 4px;
+  }
+
+  .features-box .color2{
+   background-color: rgb(117, 222, 217); 
+  }
+
+  
+  .features-box .color3{
+    background-color:antiquewhite
+   }
+ 
+   .features-box .color4{
+    background-color:#92bfac;
+   }
+ 
+   .features-box .color5{
+    background-color:#d7ecea;
+   }
+ 
+
+
+   /* STARTS OF PRODUT watches */
+
+   #product-1{
+    text-align: center;
+    width: 100%;
+
+   }
+
+   #product-1 .pro{
+    width:30%;
+    min-width: 300px;
+    padding:10px 12px;
+    border:1px solid #cce7d0;
+    margin:15px 10px;  
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.1);
+ 
+
+ }
+
+   #product-1 .pro img{
+    width: 100%;
+    height: 200px;
+    border-radius: 80%;
+    cursor: pointer;
+   
+   }
+
+   #product-1 .pro img:hover{
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.3);
+    transition: all ease-in 0.3s;
+}
+
+.pro-container .description{
+    text-align: start;
+}
+
+.pro-container .description span{
+    color: rgb(175, 171, 171);
+}
+.pro-container .description h5{
+    font-size: 14px;
+}
+.pro-container i{
+    color: rgb(207, 190, 33);
+}
+
+.pro .containerPriceCart{
+    display: flex;
+    justify-content: space-between;
+}
+.containerPriceCart .cart{
+    font-size: 20px;
+    color: #1a1a1a;
+    margin-right: 20px;
+    color: #088178;
+    
+}
+.containerPriceCart h4{
+    font-size: 20px;
+
+    margin-right: 20px;
+    color: #088178;
+    
+}
+
+#product-1 .watches-boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+/* Ends OF PRODUT watches */
+
+
+/* Banner */
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding:50px 0;   
+    background-image: url("watches/watch7.jpg");
+    background-size: cover;
+    background-position: top 20% right auto;
+    margin-bottom: 20px;
+    color: whitesmoke;
+    margin: 20px 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.3);
+    margin-bottom: 70px;
+
+}
+#banner h4{
+    color: whitesmoke;
+}
+
+#banner h2{
+    color: whitesmoke;
+    margin-top:10px;
+}
+
+#banner span{
+    color: #16e8da;
+}
+
+#banner button{
+    width: 200px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+    margin-top:10px;
+    background-color: #cde3e3;
+  
+}
+
+#banner button:hover{
+    transform: scale(1.2);
+    transition: ease 0.4s;
+    background-color: #44bcb4;
+}
+
+/* END of banner */
+
+/* New arrival */
+
+/*End of New arrival */
+
+/* Small two banners */
+
+#small-banner{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+}
+
+#small-banner .banner-box{
+    width: 50%;
+    height:400px;
+    margin: 0 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.3);
+    padding:0 20px;
+}
+
+#small-banner .box-1{
+    background-image: url("watches/banner2.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+
+#small-banner .box-2{
+    background-image: url("watches/banner1.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color:#465b52;
+    
+}
+
+#small-banner h4{
+    padding:20px 0;
+    color:rgb(245, 245, 238);
+}
+
+#small-banner h2{
+    padding:20px 0;
+    margin-bottom: 10px;
+    color:white;
+}
+#small-banner span{
+    color:white;
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+
+
+
+
+#small-banner button{
+    
+    min-width: 200px;
+    height:35px;
+    background:transparent;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    font-weight: 400;
+    font-size: 15px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.8);
+    border:none;
+    cursor: pointer;
+    color:white;
+}
+
+#small-banner button:hover{
+    transform: scale(1.2);
+    transition: all ease-in .2s;
+    background-color: #617675;
+    }
+
+
+    /* banner 3 */
+
+    #banner3{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+     }
+    #banner3 .banner3boxes{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 5px 5px 5px rgb(0,0,0,0,0.8);
+        border:none;
+       
+     }
+
+     #banner3 .banner3boxes .banner3-1{
+        background-image: url("watches/vintage.jpg");
+        background-size: cover;
+        background-position: center;
+        
+        width:400px;
+        height:300px;
+    }
+
+    #banner3 .banner3boxes .banner3-2{
+        background-image: url("watches/modern.jpg");
+        background-size: cover;
+        background-position: center;
+        
+        width:400px;
+        height:300px;
+    }
+
+    #banner3 .banner3boxes .banner3-3{
+        background-image: url("watches/tech-watch.jpg");
+        background-size: cover;
+        background-position: center;
+        
+        width:400px;
+        height:300px;
+    }
+
+    #banner3 .banner3boxes .banner3-1{
+        display: flex;
+       flex-direction: column;
+       justify-content: center;
+        align-items: center;
+        
+     }
+
+     
+    #banner3 .banner3boxes .banner3-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+     }
+     
+    #banner3 .banner3boxes .banner3-3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+     }
+
+     #banner3 .banner3boxes .banner3-1 h1{
+        color:#088178;
+     }
+     #banner3 .banner3boxes .banner3-1 h4{
+        color: white;
+     }
+
+     #banner3 .banner3boxes .banner3-2 h1{
+        color:#088178
+     }
+     #banner3 .banner3boxes .banner3-2 h4{
+        color: white;
+     }
+
+     #banner3 .banner3boxes .banner3-3 h1{
+        color:#088178;
+     }
+     #banner3 .banner3boxes .banner3-3 h4{
+        color: white;
+     }
+
+     #banner3 .banner3boxes button{
+        width: 100px;
+        height: 30px;
+        background: transparent;
+        margin-top:15px;
+        border:1px solid white;
+        color:white;
+        cursor: pointer;
+     }
+
+     
+     #banner3 .banner3boxes button:hover{
+     transform: scale(1.1);
+     transition: all ease-in 0.3s;
+     background: #1a1a1a;  
+    }
+
+
+    /* End of banner 3*/
+
+    /* Start in News letter */
+
+    #newsletter{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        background: rgb(104, 110, 110);
+        box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.8);
+        margin-bottom: 20px;
+        margin:10px 30px;
+       
+    }
+    .newstext h4{
+        font-weight: 600;
+        color: white;
+    }
+
+    .newstext p{
+        font-weight: 300;
+        color: white;
+    }
+
+
+    .form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #newsletter input{
+        width:400px;
+        height:43px;
+        box-shadow: 5px 5px 5px rgba(70,62,0,221,0.5);
+        font-size: 16px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        padding-left:10px;
+        border:none;
+        outline: none;
+    
+    }
+
+    
+    #newsletter button{
+        width:150px;
+        height:43px;
+        box-shadow: 5px 5px 5px rgba(70,62,0,221,0.5);
+        border-radius: 2px;
+        border:none;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 16px;
+        background-color: #088178;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        color: whitesmoke;
+    }
+
+     
+    #newsletter button:hover{
+    background:#529a95;
+    transform: scale(1);
+    transition: ease-in 0.2s;
+    }
+
+
+/* Footer */
+
+footer .col{
+    width: 400px;
+    height: 400px;
+  
+    margin:0 40px;
+}
+
+
+footer{
+    display:flex;
+    
+}
+
+.col .about{
+    display: flex;
+    flex-direction: column;
+}
+
+.col .account{
+    display: flex;
+    flex-direction: column;
+}
+
+footer a{
+   
+    text-decoration: none;
+    color: rgb(116, 114, 114);
+}
+
+
+.install img{
+    margin:20px 0; 
+    width:150px;
+    height: 100px;
+    cursor: pointer;
+
+}
+.pay{
+    width:180px;
+    height: 30px;
+    cursor: pointer;
+
+}
+
+.col a{
+    font-size: 14px;
+    line-height: 30px;
+}
+
+
+/* Media Queries */
+
+
+@media(max-width: 390px) {
+    
+
+
+    /* navigation bar */
+
+  #nav-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: absolute;
+  top:0;
+  right: -300px;
+  background: rgb(127, 195, 195);
+  height: 100vh;
+  width:180px;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.1);
+  padding:90px 0 0 20px;  /* navlinks to slide */
+  transition: 0.4s;
+}
+
+#nav-bar li{
+    margin-bottom: 25px;
+}
+
+#nav-bar.active{
+  
+    right: 0px;
+}
+
+#mobile{
+display: flex; /* to display the hidden cart and bar */   
+}
+
+#mobile i{
+    color:#1a1a1a;
+    font-size: 24px;
+  
+}
+
+#mobile #mobile-cart{
+    color:#1a1a1a;
+    font-size: 24px;
+    padding-right:10px;
+
+}
+#close{
+    position:absolute;
+    top:-330px;
+   left:20px;
+   font-weight: 600;
+   font-size: 24px;
+   cursor: pointer;
+   display: initial;   /* display flex*/
+}
+
+#cart{
+    display: none;
+}
+
+#header{   
+    padding-left: 10px;
+    padding-right: 20px;  /*moving the the cart and bar menu to right */
+    height: 90px;
+     
+ 
+}
+#header img{
+    height:50px;
+ 
+}
+
+/* Hero section */
+
+#hero {
+    background-position: top right 80%; /* moving the background hero image */
+    padding: 0 20px;
+    
+    
+}
+/*feature boxes*/
+ #feature-boxes{
+  display: flex; 
+   align-items: center; 
+    justify-content: center;
+
+   width: 100%;
+}
+ 
+
+ #feature-boxes .features-box {
+              
+        box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.1);
+        border: 2px solid #f5f8f5;
+        cursor: pointer;
+        
+    }
+
+
+/* product */
+
+
+#product-1 h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+#product-1 .watches-boxes{
+  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:0 40px;
+        
+
+        
+    }
+
+/* banner */
+
+#banner{
+    width:85%;
+}
+#banner h2{
+    font-size: 20px;
+}
+
+/* 2 banners */
+
+#small-banner{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+
+#small-banner .banner-box{
+    width:95%;
+    
+}
+
+.banner-box h2{
+    font-size: 20px;
+}
+#small-banner span{
+    font-size: 15px;
+}
+
+
+/* 3 banners*/
+
+#banner3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.banner3boxes{
+    margin:10px 0;
+    
+}
+
+/*newsletter*/
+
+#newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start ;
+    margin:10px 0px;
+}
+
+#newsletter input{
+width: 230px;
+margin-bottom:10px;
+}
+
+#newsletter button{
+ width: 100px;
+
+}
+
+
+#newsletter .newstext p{
+    width:100%;
+    font-size: 12px;
+    padding:0;
+  
+   }
+
+ .form{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    padding:0;
+   
+   
+    
+}
+
+/* Footer*/
+
+footer{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+}
+footer .col{
+   
+   
+    height: 340px;
+    padding-left:20px;
+    
+
+}
+
+/* Contact page*/
+
+#contact-details{
+    display: flex;
+    flex-direction: column;
+   padding:0 10px;
+}
+ .col-info .header-contact{
+    font-size: 18px;
+}
+iframe{
+    width:380px;
+}
+
+#form-details{
+    padding:10px 10px; 
+    margin-top:40px;
+    margin-left:10px;
+}
+
+#form-details{
+    display: flex;
+    flex-direction: column;
+}
+
+#form-details input{
+    width:370px;
+}
+
+.image-col{
+    display: flex;
+    flex-direction: column;
+    padding:0 10px;
+}
+
+.image-col p{
+    width:380px;
+} 
+
+/* Single page media */
+#prodDetails{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding:0 0px;
+}
+.single-prod-image{
+    width: 560px;
+   
+}
+.small-images-group{
+   margin-left:15px;
+}
+
+.image-col{
+margin-bottom: 40px;
+padding:10px;
+
+}
+
+
+.details-info{
+    padding-left:20px;
+}
+
+/*===============================================*/
+
+/*Shop Page */
+
+#page-header{
+    background-image: url('newWatches/new4.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    margin-bottom:30px;
+
+}
+
+#page-header{
+    display: flex;
+    flex-direction: column;
+    padding-top:60px;
+    padding-left:20px;
+    padding-bottom:20px;
+}
+
+#page-header h2{
+    color:white;
+
+}
+
+
+#page-header p{
+    color:white;
+
+}
+
+#page-nation{
+    text-align: center;
+    margin:20px 0;
+}
+
+#page-nation a{
+    text-decoration: none;
+    background-color: #088178;
+    font-weight: 600;
+    padding:10px 20px;
+   color:white;
+}
+#page-nation a i{
+    font-size: 17px;
+    font-weight: 600;
+}
+
+
+
+/* single product page */
+
+#prodDetails{
+    display: flex;
+  
+}
+
+
+ #large-image{
+    width:400px;
+    height: 400px;
+    padding: 30px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+
+.small-images-group{
+    display: flex;
+    width: 20%;
+   
+    
+}
+    
+.small-images-group .image-col{
+  margin-top: 10px;
+  margin-left: 10px;
+   border-radius: 3px;
+   cursor: pointer;
+   padding:0 20px;
+ 
+   
+ }
+ 
+
+ .details-info  h4{
+    padding-bottom: 30px;
+
+ } 
+
+
+ .add-to-cart input{
+    width: 25px;
+    padding:3px 0;
+     margin: 5px 0;
+}
+
+ .add-to-cart button{
+
+    width: 150px;
+    padding:5px 0;
+    margin: 5px 0;
+    background:#44bcb4;
+    border: none;
+    font-weight: 600;
+    color:white;
+    cursor: pointer; 
+}
+
+ 
+ .add-to-cart button:hover{
+ transform: scale(1);
+ transition: ease 0.3s;
+ background: #3e948e;
+ }
+
+ .details-info h4{
+    margin-top: 20px;
+ }
+
+ .details-info option{
+    font-weight: 300;
+ }
+
+
+
+ .total{
+    display: flex;
+   flex-direction: column; 
+}
+
+ .item-descriptions{
+    display: flex;
+ }
+
+
+ .item-descriptions p{
+ padding-right: 10px;
+ }
+
+ .color-descriptions{
+    display: flex;
+ }
+
+ .color-descriptions p{
+    padding-right: 10px;
+ }
+
+.amount-descriptions{
+    display: flex;
+}
+.amount-descriptions h4{
+    padding:0 1px;
+}
+
+
+/* Contact page */
+
+#contact-details{
+    display: flex;
+}
+
+ .col-info{
+    padding:0 10px;
+    width: 100%; 
+}
+
+
+.address-location{
+    margin-top:20px;
+    display: flex;
+      align-items: center;
+}
+.address-location i {
+ padding:0 20px;
+}
+
+.email-add{
+    display: flex;
+    align-items: center;
+}
+
+.email-add i{
+    padding:0 20px;
+}
+
+.phone{
+    display: flex;
+    align-items: center;
+}
+
+.phone i{
+    padding:0 20px;
+}
+
+.business-hour{
+    display: flex;
+    align-items: center;
+}
+.business-hour i{
+    padding:0 20px;
+}
+
+
+/* message area */
+
+#form-details{
+    width:100%;
+  
+    display: flex;
+}
+
+
+#form-details .col-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-field{
+    display: flex;
+    flex-direction: column;
+    
+}
+.col-form .text-field input{
+    width:800px;
+    padding:20px 10px;
+    margin:10px 0;
+    
+    
+}
+.col-form .text-field textarea{
+height: 200px;
+padding:10px;
+}
+.col-form .text-field button{
+width:150px;
+padding:15px 0;
+margin:10px 0;
+background: #088178;
+border: none;
+transition: ease 0.3s;
+cursor: pointer;
+color: whitesmoke;
+font-weight: 400;
+}
+.col-form .text-field button:hover{
+background-color: #51817e;
+}
+
+
+.image-col{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width:100%;
+    padding:0 60px;
+    margin-top:70px;
+   
+    
+}
+.image-col p{
+  
+    text-align: justify;
+    padding-left:20px;
+}
+
+.image-col img{
+    border-radius:50%;
+    cursor: pointer;
+}
+
+
